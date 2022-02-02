@@ -1,0 +1,22 @@
+- hosts: win
+  gather_facts: no
+  tasks:
+  - win_chocolatey:
+      name: 
+      - 7zip
+      - adobereader
+      - audacity
+      - chocolateygui
+      - git.install
+      - googlechrome
+      - netbeans
+      - notepadplusplus
+      - obs-studio
+      - procexp
+      - putty.install
+      - tightvnc
+      - tortoisegit
+      - vlc
+      - winscp
+      - wireshark
+      state: present
